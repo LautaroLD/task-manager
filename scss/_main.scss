@@ -1,0 +1,121 @@
+main {
+    width    : 100%;
+    font-size: $size;
+
+    .items-list {
+        list-style  : none;
+        margin-block: 20px;
+
+        .list-empty--text,
+        .list-loading--text {
+            background-color: $Gray;
+            padding         : 40px;
+            border-radius   : 20px;
+            text-align      : center;
+        }
+
+        .items {
+            display         : flex;
+            padding         : 5px 10px;
+            justify-content : space-between;
+            align-items     : center;
+            background-color: $Gray;
+            margin-block    : 10px;
+            border-radius   : 15px;
+            padding         : 10px 15px;
+            letter-spacing: 2px;
+            font-weight: $Weight2;
+            
+            .bx {
+                font-weight: $Weight2;
+                font-size  : $size-bx;
+
+                &:hover {
+                    cursor          : pointer;
+                    background-color: $DarkGray;
+                }
+            }
+
+            .checked {
+                color: $Green;
+            }
+
+            .bx-x {
+                color: $Red;
+            }
+        }
+
+        .completed {
+            background-color: $DarkGray;
+
+            .text-item {
+                text-decoration: line-through;
+
+            }
+        }
+    }
+
+    .btns-container {
+        display                 : grid;
+        grid-template-columns   : 1fr 1fr;
+        grid-template-rows      : 1fr 1fr 1fr;
+        padding                 : 20px 0 0;
+        border-radius           : 10px;
+        background-color        : $LightGray;
+        // row-gap              : 30px;
+
+        .countP {
+            place-self: center;
+        }
+
+        .clearComplete--btn {
+            text-align   : center;
+            margin       : auto;
+            padding      : 7px 10px;
+            border-radius: 20px;
+            border       : 1px solid #000;
+            cursor       : pointer;
+
+            &:hover {
+                background-color: $DarkGray;
+            }
+        }
+
+        .title-filter {
+            // margin-top: 20px;
+            align-self : flex-end;
+            grid-column: 1 / 3;
+            text-align : center;
+        }
+
+        .container-btns-filter {
+            display        : flex;
+            margin-top     : 5px;
+            justify-content: center;
+            grid-area      : 3/ 1/ 4/ 3;
+
+            a {
+                cursor          : pointer;
+                padding         : 10px 15px;
+                // margin       : auto;
+                // border-radius: 20px;
+                // border       : 1px solid black;
+                background-color: $Gray ;
+                width           : 100%;
+                text-align      : center;
+
+                &:first-child {
+                    border-end-start-radius: 10px;
+                }
+
+                &:last-child {
+                    border-end-end-radius: 10px;
+                }
+
+                &:hover {
+                    background-color: $DarkGray;
+                }
+            }
+        }
+    }
+}
