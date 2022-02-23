@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.js": "/static/js/main.f4d167bb.js",
-    "index.html": "/index.html",
-    "main.f4d167bb.js.map": "/static/js/main.f4d167bb.js.map"
+    "main.js": "/task-manager/static/js/main.f4d167bb.js",
+    "index.html": "/task-manager/index.html",
+    "main.f4d167bb.js.map": "/task-manager/static/js/main.f4d167bb.js.map"
   },
   "entrypoints": [
     "static/js/main.f4d167bb.js"
