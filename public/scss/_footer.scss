@@ -1,0 +1,21 @@
+footer {
+    display       : flex;
+    flex-direction: column;
+    align-items   : center;
+    margin-top    : auto;
+    gap: 39px;
+    p {
+        font-size: $size;
+        color    : $Very-Dark-Grayish-Blue-LT;
+    }
+
+    .attribution {
+        font-size : $size;
+        color    : $Very-Dark-Grayish-Blue-LT;
+        text-align: center;
+    }
+
+    .attribution a {
+        color: hsl(228, 45%, 44%);
+    }
+}

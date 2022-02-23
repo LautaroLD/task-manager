@@ -1,0 +1,207 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: "Josefin Sans";
+}
+
+body #App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: url("bg-mobile-light.jpg") no-repeat;
+  background-size: 100% 30vh;
+  background-color: #313f6d;
+  padding: 7vh 7vw;
+  min-width: 320px;
+  height: auto;
+  min-height: 100vh;
+}
+
+.dark-theme {
+  background: url("bg-mobile-dark.jpg") no-repeat;
+  background-color: #161722;
+  background-size: 100% 30%;
+}
+.dark-theme #App ul {
+  background-color: #393a4c;
+}
+.dark-theme #App .create-item span {
+  background-image: url("../images/arrow-white.svg");
+}
+.dark-theme #App .items-list {
+  box-shadow: none;
+}
+.dark-theme #App .items-list .items div span:first-child {
+  border: solid 1px #e4e5f1;
+}
+.dark-theme #App .items-list .items div .complete-check {
+  background-color: #e4e5f1;
+}
+.dark-theme #App .items-list .items div .cross {
+  background-image: url("../images/icon-cross-white.svg");
+}
+
+header {
+  display: flex;
+  height: auto;
+  position: relative;
+  justify-content: center;
+  gap: 40px;
+  width: 100%;
+}
+header h1 {
+  font-size: 2.8rem;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  color: #fafafa;
+  font-weight: 700;
+}
+
+.create-item {
+  display: flex;
+  padding: 5px 10px;
+  justify-content: space-between;
+  margin-block: 15px;
+  width: 90%;
+  background-color: #dfdfdf;
+  border-radius: 15px;
+  padding: 10px 15px;
+}
+.create-item .create-item--input {
+  color: black;
+  border: none;
+  background-color: transparent;
+  width: inherit;
+}
+.create-item .create-item--input:focus-visible {
+  outline: none;
+}
+.create-item .create-item--input::placeholder {
+  color: black;
+}
+.create-item .create-item-btn {
+  border: none;
+  background-color: transparent;
+}
+
+main {
+  width: 100%;
+  font-size: 1.8rem;
+}
+main .items-list {
+  list-style: none;
+  margin-block: 20px;
+}
+main .items-list .list-empty--text,
+main .items-list .list-loading--text {
+  background-color: #c2c2c29b;
+  padding: 40px;
+  border-radius: 20px;
+  text-align: center;
+}
+main .items-list .items {
+  display: flex;
+  padding: 5px 10px;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #c2c2c29b;
+  margin-block: 10px;
+  border-radius: 15px;
+  padding: 10px 15px;
+  letter-spacing: 2px;
+  font-weight: 700;
+}
+main .items-list .items .bx {
+  font-weight: 700;
+  font-size: 3rem;
+}
+main .items-list .items .bx:hover {
+  cursor: pointer;
+  background-color: #808080c4;
+}
+main .items-list .items .checked {
+  color: #6fe46f;
+}
+main .items-list .items .bx-x {
+  color: #ff3333;
+}
+main .items-list .completed {
+  background-color: #808080c4;
+}
+main .items-list .completed .text-item {
+  text-decoration: line-through;
+}
+main .btns-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  padding: 20px 0 0;
+  border-radius: 10px;
+  background-color: #dfdfdf;
+}
+main .btns-container .countP {
+  place-self: center;
+}
+main .btns-container .clearComplete--btn {
+  text-align: center;
+  margin: auto;
+  padding: 7px 10px;
+  border-radius: 20px;
+  border: 1px solid #000;
+  cursor: pointer;
+}
+main .btns-container .clearComplete--btn:hover {
+  background-color: #808080c4;
+}
+main .btns-container .title-filter {
+  align-self: flex-end;
+  grid-column: 1/3;
+  text-align: center;
+}
+main .btns-container .container-btns-filter {
+  display: flex;
+  margin-top: 5px;
+  justify-content: center;
+  grid-area: 3/1/4/3;
+}
+main .btns-container .container-btns-filter a {
+  cursor: pointer;
+  padding: 10px 15px;
+  background-color: #c2c2c29b;
+  width: 100%;
+  text-align: center;
+}
+main .btns-container .container-btns-filter a:first-child {
+  border-end-start-radius: 10px;
+}
+main .btns-container .container-btns-filter a:last-child {
+  border-end-end-radius: 10px;
+}
+main .btns-container .container-btns-filter a:hover {
+  background-color: #808080c4;
+}
+
+footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: auto;
+  gap: 39px;
+}
+footer p {
+  font-size: 1.8rem;
+  color: #313f6d;
+}
+footer .attribution {
+  font-size: 1.8rem;
+  color: #313f6d;
+  text-align: center;
+}
+footer .attribution a {
+  color: #3e52a3;
+}
