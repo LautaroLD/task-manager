@@ -13,9 +13,9 @@ body #App {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: url("../../bg-mobile-light.jpg") no-repeat;
+  background: url("../bg-mobile-light.jpg") no-repeat;
   background-size: 100% 30vh;
-  background-color: #313f6d;
+  background-color: #3d387a;
   padding: 7vh 7vw;
   min-width: 320px;
   height: auto;
@@ -160,24 +160,4 @@ main .btns-container .container-btns-filter a:last-child {
 }
 main .btns-container .container-btns-filter a:hover {
   background-color: #808080c4;
-}
-
-footer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: auto;
-  gap: 39px;
-}
-footer p {
-  font-size: 1.8rem;
-  color: #313f6d;
-}
-footer .attribution {
-  font-size: 1.8rem;
-  color: #313f6d;
-  text-align: center;
-}
-footer .attribution a {
-  color: #3e52a3;
 }

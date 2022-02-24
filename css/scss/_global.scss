@@ -13,9 +13,9 @@ body #App {
     display         : flex;
     flex-direction  : column;
     align-items     : center;
-    background      : url('../../bg-mobile-light.jpg') no-repeat;
+    background      : url('../bg-mobile-light.jpg') no-repeat;
     background-size : 100% 30vh;
-    background-color: $Very-Dark-Grayish-Blue-LT;
+    background-color: $VioletBg;
     padding         : 7vh 7vw ;
     min-width       : 320px;
     height          : auto;
