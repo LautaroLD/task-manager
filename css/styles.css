@@ -22,30 +22,6 @@ body #App {
   min-height: 100vh;
 }
 
-.dark-theme {
-  background: url("bg-mobile-dark.jpg") no-repeat;
-  background-color: #161722;
-  background-size: 100% 30%;
-}
-.dark-theme #App ul {
-  background-color: #393a4c;
-}
-.dark-theme #App .create-item span {
-  background-image: url("../images/arrow-white.svg");
-}
-.dark-theme #App .items-list {
-  box-shadow: none;
-}
-.dark-theme #App .items-list .items div span:first-child {
-  border: solid 1px #e4e5f1;
-}
-.dark-theme #App .items-list .items div .complete-check {
-  background-color: #e4e5f1;
-}
-.dark-theme #App .items-list .items div .cross {
-  background-image: url("../images/icon-cross-white.svg");
-}
-
 header {
   display: flex;
   height: auto;
@@ -99,7 +75,7 @@ main .items-list {
 }
 main .items-list .list-empty--text,
 main .items-list .list-loading--text {
-  background-color: #c2c2c29b;
+  background-color: #d1d1d1b0;
   padding: 40px;
   border-radius: 20px;
   text-align: center;
@@ -109,7 +85,7 @@ main .items-list .items {
   padding: 5px 10px;
   justify-content: space-between;
   align-items: center;
-  background-color: #c2c2c29b;
+  background-color: #d1d1d1b0;
   margin-block: 10px;
   border-radius: 15px;
   padding: 10px 15px;
@@ -172,7 +148,7 @@ main .btns-container .container-btns-filter {
 main .btns-container .container-btns-filter a {
   cursor: pointer;
   padding: 10px 15px;
-  background-color: #c2c2c29b;
+  background-color: #d1d1d1b0;
   width: 100%;
   text-align: center;
 }
