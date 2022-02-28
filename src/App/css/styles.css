@@ -13,37 +13,13 @@ body #App {
   display: flex;
   flex-direction: column;
   align-items: center;
-  background: url("bg-mobile-light.jpg") no-repeat;
+  background: url("./bg-mobile-light.jpg") no-repeat;
   background-size: 100% 30vh;
-  background-color: #313f6d;
+  background-color: #3d387a;
   padding: 7vh 7vw;
   min-width: 320px;
   height: auto;
   min-height: 100vh;
-}
-
-.dark-theme {
-  background: url("bg-mobile-dark.jpg") no-repeat;
-  background-color: #161722;
-  background-size: 100% 30%;
-}
-.dark-theme #App ul {
-  background-color: #393a4c;
-}
-.dark-theme #App .create-item span {
-  background-image: url("../images/arrow-white.svg");
-}
-.dark-theme #App .items-list {
-  box-shadow: none;
-}
-.dark-theme #App .items-list .items div span:first-child {
-  border: solid 1px #e4e5f1;
-}
-.dark-theme #App .items-list .items div .complete-check {
-  background-color: #e4e5f1;
-}
-.dark-theme #App .items-list .items div .cross {
-  background-image: url("../images/icon-cross-white.svg");
 }
 
 header {
@@ -99,7 +75,7 @@ main .items-list {
 }
 main .items-list .list-empty--text,
 main .items-list .list-loading--text {
-  background-color: #c2c2c29b;
+  background-color: #d1d1d1cc;
   padding: 40px;
   border-radius: 20px;
   text-align: center;
@@ -109,12 +85,12 @@ main .items-list .items {
   padding: 5px 10px;
   justify-content: space-between;
   align-items: center;
-  background-color: #c2c2c29b;
+  background-color: #d1d1d1cc;
   margin-block: 10px;
   border-radius: 15px;
   padding: 10px 15px;
   letter-spacing: 2px;
-  font-weight: 700;
+  font-weight: 400;
 }
 main .items-list .items .bx {
   font-weight: 700;
@@ -172,7 +148,7 @@ main .btns-container .container-btns-filter {
 main .btns-container .container-btns-filter a {
   cursor: pointer;
   padding: 10px 15px;
-  background-color: #c2c2c29b;
+  background-color: #d1d1d1cc;
   width: 100%;
   text-align: center;
 }
@@ -186,22 +162,12 @@ main .btns-container .container-btns-filter a:hover {
   background-color: #808080c4;
 }
 
-footer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: auto;
-  gap: 39px;
-}
-footer p {
-  font-size: 1.8rem;
-  color: #313f6d;
-}
-footer .attribution {
-  font-size: 1.8rem;
-  color: #313f6d;
-  text-align: center;
-}
-footer .attribution a {
-  color: #3e52a3;
+@media only screen and (min-width: 768px) {
+  body #App {
+    background-image: url("./bg-desktop-light.jpg");
+  }
+
+  main {
+    width: 70%;
+  }
 }

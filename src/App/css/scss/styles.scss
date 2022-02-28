@@ -1,0 +1,20 @@
+@import './variables';
+@import './global';
+@import './header';
+@import './form';
+@import './main';
+
+@mixin respond-to ($width) {
+    @media only screen and (min-width: $width) {
+        @content;
+    }
+}
+
+@include respond-to(768px) {
+    body #App{
+        background-image: url('./bg-desktop-light.jpg');
+    }
+    main {
+        width: 70%;
+    }
+}
