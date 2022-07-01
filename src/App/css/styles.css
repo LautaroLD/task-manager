@@ -8,6 +8,9 @@ html {
   font-size: 62.5%;
   font-family: "Josefin Sans";
 }
+html::-webkit-scrollbar {
+  display: none;
+}
 
 body #App {
   display: flex;
@@ -116,7 +119,7 @@ main .btns-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr;
-  padding: 20px 0 0;
+  padding: 20px 5px 0;
   border-radius: 10px;
   background-color: #dfdfdf;
 }

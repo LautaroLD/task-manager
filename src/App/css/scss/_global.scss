@@ -7,6 +7,9 @@
 html {
     font-size  : 62.5%;
     font-family: $Family;
+    &::-webkit-scrollbar{
+        display: none;
+    }
 }
 
 body #App {
